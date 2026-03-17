@@ -8,6 +8,10 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - List at least two concrete bugs you noticed at the start  
   (for example: "the secret number kept changing" or "the hints were backwards").
 
+  One critical bug is the flipped logic for the hints, since making guesses will put you in the opposite direction.
+  Another critical bug is that the number of attempts on screen does not match the amount of attempts you actually have. The game will terminate early by one attempt.
+  A third bug is that the attempt counters are inconsistent when clicking between difficulties. 
+
 ---
 
 ## 2. How did you use AI as a teammate?

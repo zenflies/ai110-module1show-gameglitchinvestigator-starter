@@ -28,7 +28,7 @@ def parse_guess(raw: str):
 
     return True, value, None
 
-
+# FIXME: Reverses the logic of the hints for player guesses
 def check_guess(guess, secret):
     if guess == secret:
         return "Win", "🎉 Correct!"
@@ -92,6 +92,7 @@ st.sidebar.caption(f"Attempts allowed: {attempt_limit}")
 if "secret" not in st.session_state:
     st.session_state.secret = random.randint(low, high)
 
+#FIXME: Attempts start at 1 instead of 0, causing off-by-one error in attempt counting and scoring
 if "attempts" not in st.session_state:
     st.session_state.attempts = 1
 
