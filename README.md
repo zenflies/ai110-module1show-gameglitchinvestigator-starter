@@ -25,12 +25,9 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-The purpose of the game is to guess a randomly generated number with a given amount of attempts. There are multiple difficulty modes which correspond to the amount of starting attempts you are given. When an attempt is made, you are given a comparison of your attempt to the actual value (less than, greater than, or equal to), pushing you to the correct answer!
-- [ ] Detail which bugs you found.
-There were multiple bugs that halted the proper operation of the game. The first major bug was the flipped hint logic, which would incorrectly guide the user to the wrong number by telling them the opposite comparison of their attempt to the actual secret number. Another bug was that attempts were off-by-one, where the game would terminate early despite the user having one more attempt.
-- [ ] Explain what fixes you applied.
-The major game logic was ported into another file with deliberate functions to represent major functionality in the game, making modifications and updates easier long-term. The specific fixes including re-flipping the hint logic and changing the attempt session state variable to fix the respective issues.
+- [ ] The purpose of the game is to guess a randomly generated number with a given amount of attempts. There are multiple difficulty modes which correspond to the amount of starting attempts you are given. When an attempt is made, you are given a comparison of your attempt to the actual value (less than, greater than, or equal to), pushing you to the correct answer!
+- [ ] There were multiple bugs that halted the proper operation of the game. The first major bug was the flipped hint logic, which would incorrectly guide the user to the wrong number by telling them the opposite comparison of their attempt to the actual secret number. Another bug was that attempts were off-by-one, where the game would terminate early despite the user having one more attempt.
+- [ ] The major game logic was ported into another file with deliberate functions to represent major functionality in the game, making modifications and updates easier long-term. The specific fixes including re-flipping the hint logic and changing the attempt session state variable to fix the respective issues.
 
 ## 📸 Demo
 
