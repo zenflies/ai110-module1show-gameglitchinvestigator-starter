@@ -30,7 +30,7 @@ def parse_guess(raw: str):
 
     return True, value, None
 
-
+# FIX: Hint directions are now correctly aligned
 def check_guess(guess, secret):
     """Compare guess to secret and return (outcome, message).
 

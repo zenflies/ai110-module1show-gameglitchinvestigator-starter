@@ -91,6 +91,7 @@ if st.session_state.status != "playing":
         st.error("Game over. Start a new game to try again.")
     st.stop()
 
+# FIX: Attempts are now correctly incremented on each guess submission, regardless of validity.
 if submit:
     st.session_state.attempts += 1
 
